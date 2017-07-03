@@ -1,0 +1,64 @@
+extends layout
+block content
+  include header.jade
+  br 
+  .row
+    .col-md-6
+      h2.text-uppercase Parciais
+    .col-md-2
+      .row
+        .col-md-8
+          h4.text-uppercase Pontuação total
+        .col-md-2
+          h2 -77.9
+        .col-md-2
+    .col-md-2
+      | Atualizar
+  br
+  .row
+    .col-md-6
+      .plenario
+        | AQUI
+    .col-md-6
+      | LISTA COM OS POLITICOS
+  br
+  br 
+  br 
+  .row
+    .col-md-8 
+      | MERCADO
+    .col-md-4
+      | FILTROS 
+  table.table.table-hover
+    thead.thead-inverse
+      tr 
+        th Partido 
+        th Político
+        th Pontuação Parcial
+        th id
+    tbody.politicos
+        for politico in politicos
+          tr 
+            th #{politico.partido}
+            th 
+              .row 
+                .col-md-4
+                  img(src="#{politico.picture}")
+                .col-md-4 
+                  | #{politico.nomeParlamentar}
+                  br 
+                  | DEPUTADO
+            th  
+              if politico.parcialNote == 0
+                | #{politico.parcialNote}
+              else
+                | - #{politico.parcialNote}
+            th 
+              #{politico.id}
+        
+      
+  h1= title
+  div.top
+   div.main
+    a(class='button', href='/generate') Gerar nova LOLrota
+  include footer.jade

@@ -1,0 +1,40 @@
+body {
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+}
+
+.content {
+  padding: 50px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.header {
+  padding-bottom: 45px;
+  border-bottom: solid 3px #D5D5D5;
+}
+
+.plenario {
+  background-image: url('http://www12.senado.leg.br/noticias/materias/resolveuid/a53492c3-9310-485d-9296-55a10c5790e9');
+  width: 600px;
+  height: 616px;
+}
+
+.main{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.github{
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/giticon.png');
+	text-indent: -9999px;
+}
+
+.github a{
+	width: 32px;
+	height: 32px;
+	display: block;
+}
