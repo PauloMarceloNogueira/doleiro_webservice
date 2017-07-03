@@ -42,6 +42,7 @@ block content
           th
             h5.text-uppercase Pontuação Parcial
           th
+          th 
             
       tbody.politicos
           for politico in politicos
@@ -65,6 +66,9 @@ block content
                     | #{politico.parcialNote}
                   else
                     | -#{politico.parcialNote}
+              th 
+                .escalarButton
+                  button.btn.btn-success(type="submit",style="width:140px;") Escalar
               th.thArrow
                 .arrow
                   span.glyphicon.glyphicon-chevron-down
