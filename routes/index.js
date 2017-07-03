@@ -11,6 +11,9 @@ router.get('/',function(req,res,next) {
   request("https://zlvtn47i82.execute-api.us-east-1.amazonaws.com/dev/politicos",function(err,response,body) {
     var b = parser.parse(body, null, true)
     var politicos = _.sortBy(b,'parcialNote')
+    politicos = _.reject(politicos,function(politico){
+      return !politico.parcialNote
+    })
     res.render('index',{politicos:politicos.reverse()})
   })
 })
