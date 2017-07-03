@@ -10,6 +10,7 @@
   "dependencies": {
     "express": "^4.15.3",
     "jade": "^1.11.0",
-    "json-parser": "^1.1.5"
+    "json-parser": "^1.1.5",
+    "underscore": "^1.8.3"
   }
 }

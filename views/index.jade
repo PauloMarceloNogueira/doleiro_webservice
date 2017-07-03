@@ -9,16 +9,13 @@ block content
       .row
         .col-md-8
           h4.text-uppercase Pontuação total
-        .col-md-2
+        .col-md-4
           h2 -77.9
         .col-md-2
-    .col-md-2
-      | Atualizar
   br
   .row
     .col-md-6
       .plenario
-        | AQUI
     .col-md-6
       | LISTA COM OS POLITICOS
   br
@@ -39,7 +36,10 @@ block content
     tbody.politicos
         for politico in politicos
           tr 
-            th #{politico.partido}
+            th 
+              img(src="http://www.camara.leg.br/internet/Deputado/img/partidos/#{politico.partido}.gif")
+              h4 #{politico.uf}
+              
             th 
               .row 
                 .col-md-4
@@ -57,8 +57,4 @@ block content
               #{politico.id}
         
       
-  h1= title
-  div.top
-   div.main
-    a(class='button', href='/generate') Gerar nova LOLrota
-  include footer.jade
+include footer.jade

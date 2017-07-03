@@ -9,6 +9,6 @@ app.set('view engine', 'jade');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 
-app.listen(3000,function(){
-  console.log('localhost:3000')
+app.listen(8080,function(){
+  console.log('localhost:8080')
 })
