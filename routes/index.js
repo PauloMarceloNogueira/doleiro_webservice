@@ -9,7 +9,7 @@ router.get('/',function(req,res,next) {
     console.log(b,'BODY');
 
     var politicos = b
-    res.render('index',{politicos})
+    res.render('index',{politicos:politicos})
   })
 })
 
