@@ -12,6 +12,7 @@
     "express": "^4.15.3",
     "jade": "^1.11.0",
     "json-parser": "^1.1.5",
+    "request": "^2.81.0",
     "underscore": "^1.8.3"
   }
 }
