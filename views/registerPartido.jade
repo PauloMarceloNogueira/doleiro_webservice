@@ -1,0 +1,50 @@
+extends layout
+block content
+  include editHeader.jade
+  br 
+  .dashboard_one
+    .row
+      .col-md-6
+        h2.text-uppercase Parciais
+      
+            
+      .col-md-2
+        .row
+          .col-md-8
+            h4.text-uppercase Pontuação total
+          .col-md-4
+            h2 -77.9
+          .col-md-2
+    br
+    .row
+      .col-md-6
+        .plenario
+      .col-md-6
+        
+      
+    br
+  .dashboard_two
+    .row
+      .col-md-8 
+        h3 MERCADO
+      .col-md-4
+    .filtersContent
+      .row
+        .col-md-10
+        .col-md-2
+          h5.text-uppercase Limpar Filtro    
+    table.table.politicosTable
+      thead.thead-inverse
+        tr 
+          th
+            h5.text-uppercase Partido 
+          th
+            h5.text-uppercase Político
+          th
+            h5.text-uppercase Pontuação Parcial
+          th
+          th 
+            
+      tbody.politicos
+          
+include footer.jade
